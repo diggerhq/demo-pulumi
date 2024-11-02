@@ -12,4 +12,8 @@ workflows:
           value: "s3://pulumi-dggr-tests?region=us-east-2"
         - name: PULUMI_CONFIG_PASSPHRASE
           value_from: PULUMI_CONFIG_PASSPHRASE
+        - name: AWS_ACCESS_KEY_ID
+          value_from: AWS_ACCESS_KEY_ID
+        - name: AWS_SECRET_ACCESS_KEY
+          value_from: AWS_SECRET_ACCESS_KEY
       
