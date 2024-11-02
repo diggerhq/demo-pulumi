@@ -3,3 +3,17 @@ projects:
     dir: .
     pulumi: true
     pulumi_stack: dev
+
+workflows:
+  default:
+    env_vars:
+      state:
+        - name: PULUMI_BACKEND_URL
+          value: "s3://pulumi-dggr-tests?region=us-east-2"
+        - name: PULUMI_CONFIG_PASSPHRASE
+          value_from: PULUMI_CONFIG_PASSPHRASE
+      commands:
+        - name: PULUMI_BACKEND_URL
+          value: "s3://pulumi-dggr-tests?region=us-east-2"
+        - name: PULUMI_CONFIG_PASSPHRASE
+          value_from: PULUMI_CONFIG_PASSPHRASE
