@@ -1,0 +1,5 @@
+projects:
+  - name: dev
+    dir: .
+    pulumi: true
+    pulumi_stack: dev
