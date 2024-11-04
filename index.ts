@@ -19,3 +19,4 @@ const parameter = new aws.ssm.Parameter("example-parameter", {
 export const parameterArn = parameter.arn;
 export const parameterName = parameter.name;
 
+
