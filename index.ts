@@ -16,7 +16,7 @@ const parameter = new aws.ssm.Parameter("example-parameter", {
 });
 
 
-const parameter = new aws.ssm.Parameter("example-parameter2", {
+const parameter2 = new aws.ssm.Parameter("example-parameter2", {
     name: "/my/parameter/path2",
     type: "String",
     value: "my-parameter-value2",
